@@ -56,7 +56,41 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp loc="(760,520)" name="Banco_de_registadores"/>
+    <comp lib="0" loc="(190,240)" name="Clock"/>
+    <comp lib="0" loc="(190,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(300,110)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(690,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="3" loc="(410,120)" name="Adder"/>
+    <comp lib="4" loc="(260,200)" name="Register">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="pc"/>
+    </comp>
+    <comp lib="4" loc="(380,190)" name="ROM">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <wire from="(190,240)" to="(240,240)"/>
+    <wire from="(190,290)" to="(250,290)"/>
+    <wire from="(200,200)" to="(230,200)"/>
+    <wire from="(200,60)" to="(200,200)"/>
+    <wire from="(200,60)" to="(450,60)"/>
+    <wire from="(240,220)" to="(240,240)"/>
+    <wire from="(250,220)" to="(250,290)"/>
+    <wire from="(260,200)" to="(330,200)"/>
+    <wire from="(300,110)" to="(370,110)"/>
+    <wire from="(330,130)" to="(330,200)"/>
+    <wire from="(330,130)" to="(370,130)"/>
+    <wire from="(330,200)" to="(380,200)"/>
+    <wire from="(410,120)" to="(450,120)"/>
+    <wire from="(450,60)" to="(450,120)"/>
+    <wire from="(620,250)" to="(690,250)"/>
   </circuit>
   <circuit name="Banco_de_registadores">
     <a name="appearance" val="logisim_evolution"/>
